@@ -32,6 +32,7 @@ class TodoAdapter(
         todos.removeAll{
             todo -> todo.isChecked
         }
+        notifyDataSetChanged()
     }
 
     private fun toggleStrikeThrough(tvTodoTitle: TextView, isChecked: Boolean){
